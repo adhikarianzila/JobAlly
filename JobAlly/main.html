@@ -1,0 +1,13 @@
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-outline mb-4">
+        <input type="text" name="name" placeholder="Enter Your Name" class="form-control">
+    </div>
+    <div class="form-outline mb-4">
+        <input type="url" name="url" id="url" placeholder="Enter Your URL" class="form-control">
+    </div>
+    <div class="form-outline mb-4">
+        <input type="tel" name="phone" id="phone" placeholder="Enter Your Number" class="form-control">
+    </div>
+    <input type="submit" class='btn btn-primary btn-block mb-4' value="submit">
+</form>
